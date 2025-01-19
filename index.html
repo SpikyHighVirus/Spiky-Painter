@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiky Painter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-bar">
+        <h1>Spiky Painter</h1>
+    </div>
+    <div class="toolbar">
+        <div class="section tools">
+            <button id="pencil" title="Pencil">
+                <img src="icons/pencil.png" alt="Pencil" class="static">
+                <img src="icons/pencil.gif" alt="Pencil Animated" class="animated">
+            </button>
+            <button id="brush" title="Brush">
+                <img src="icons/brush.png" alt="Brush" class="static">
+                <img src="icons/brush.gif" alt="Brush Animated" class="animated">
+            </button>
+            <button id="eraser" title="Eraser">
+                <img src="icons/eraser.png" alt="Eraser" class="static">
+                <img src="icons/eraser.gif" alt="Eraser Animated" class="animated">
+            </button>
+            <button id="eyedropper" title="Eyedropper">
+                <img src="icons/eyedropper.png" alt="Eyedropper" class="static">
+                <img src="icons/eyedropper.gif" alt="Eyedropper Animated" class="animated">
+            </button>
+        </div>
+        <div class="section shapes">
+            <button id="line" title="Line">
+                <img src="icons/line.png" alt="Line">
+            </button>
+            <button id="rectangle" title="Rectangle">
+                <img src="icons/rectangle.png" alt="Rectangle">
+            </button>
+            <button id="circle" title="Circle">
+                <img src="icons/circle.png" alt="Circle">
+            </button>
+        </div>
+        <div class="section colors">
+            <input type="color" id="color-picker" title="Color Picker">
+        </div>
+        <div class="section actions">
+            <button id="clear" title="Clear Canvas">Clear Canvas</button>
+            <button id="save" title="Save Drawing">Save</button>
+        </div>
+    </div>
+    <canvas id="paintCanvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
